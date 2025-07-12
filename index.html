@@ -4,23 +4,26 @@
 	<title>Balloon Animation</title>
 	<link rel="stylesheet" type="text/css" href="appy.css">
 	<style>
-		/* Tambahan untuk teks navigasi */
-		.navigation-link 
+		/* Tombol Navigasi di bawah dengan efek hover */
+		.navigation-link {
 			position: fixed;
-			bottom: 60px; /* Jarak dari bawah */
-			left: 50%; /* Posisi horizontal di tengah */
-			transform: translateX(-50%); /* Memindahkan elemen agar tepat di tengah */
-			text-decoration: none; /* Menghilangkan garis bawah */
-			color: blue; /* Warna teks */
-			font-size: 20px; /* Ukuran font */
-			background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
-			padding: 10px 20px; /* Padding untuk jarak dalam elemen */
-			border-radius: 5px; /* Membuat sudut melengkung */
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
+			bottom: 60px; /* Jarak dari bawah layar */
+			left: 50%;
+			transform: translateX(-50%);
+			text-decoration: none;
+			color: blue;
+			font-size: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 10px 25px;
+			border-radius: 8px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease-in-out;
 		}
+
 		.navigation-link:hover {
 			background-color: blue;
-			color: white; /* Mengubah warna teks saat hover */
+			color: white;
+			transform: translateX(-50%) scale(1.05);
 		}
 	</style>
 </head>
@@ -28,9 +31,11 @@
 	<center>
 		<h2>Happy Birthday</h2>
 		<br>
-		<h3>Heraaaa</h3>
+		<h3>NUYYYY</h3>
 		<br>
 	</center>
+
+	<!-- Balon -->
 	<div class="balloon"></div>
 	<div class="balloon"></div>
 	<div class="balloon"></div>
@@ -41,7 +46,7 @@
 	<div class="balloon"></div>
 	<div class="balloon"></div>
 
-	<!-- Link navigasi -->
+	<!-- Tombol NEXT -->
 	<a href="page1/kartu.html" class="navigation-link">NEXT</a>
 </body>
 </html>
