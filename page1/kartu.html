@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENCET SURATNYA</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+		/* Tambahan untuk teks navigasi */
+		.navigation-link {
+			position: fixed;
+			bottom: 60px; /* Jarak dari bawah */
+			left: 50%; /* Posisi horizontal di tengah */
+			transform: translateX(-50%); /* Memindahkan elemen agar tepat di tengah */
+			text-decoration: none; /* Menghilangkan garis bawah */
+			color: blue; /* Warna teks */
+			font-size: 20px; /* Ukuran font */
+			background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+			padding: 10px 20px; /* Padding untuk jarak dalam elemen */
+			border-radius: 5px; /* Membuat sudut melengkung */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
+		}
+		.navigation-link:hover {
+			background-color: blue;
+			color: white; /* Mengubah warna teks saat hover */
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Person.</strong>
+                        <p>
+                            Selamat ulang tahun yang ke 19 tahunnn raaaa🥳🥳🥳
+                            
+                        </p>
+                        <p>semoga jadi pribadi yang lebih kuat dari sebelumnya dan sehat selaluu....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+    	<a href="page2/page2.html" class="navigation-link">NEXT</a>
+</body>
+</html>
